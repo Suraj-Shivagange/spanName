@@ -53,8 +53,8 @@ func (sn *rootspanName) processTraces(_ context.Context, td ptrace.Traces) (ptra
 				start_time := s.StartTimestamp().String()
 				end_time := s.EndTimestamp().String()
 
-				//fmt.Printf("SpanID = " + spanID + "\n" + "traceID = " + traceID + "\n")
-				//fmt.Printf("start_time:" + start_time + "\n" + "end_time:" + end_time + "\n")
+				fmt.Printf("SpanID = " + spanID + "\n" + "traceID = " + traceID + "\n")
+				fmt.Printf("start_time:" + start_time + "\n" + "end_time:" + end_time + "\n")
 
 				if parentspanID == "" {
 					rootSpanName = spanName
