@@ -60,6 +60,8 @@ func (sn *rootspanName) processTraces(_ context.Context, td ptrace.Traces) (ptra
 					rootSpanName = spanName
 					fmt.Printf("Set rootSpanName = " + rootSpanName)
 				}
+				
+				fmt.Printf("Root Span for span ID " + spanID + "with name" + spanName + "is" + rootSpanName)
 			}
 
 		}
