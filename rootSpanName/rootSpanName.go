@@ -58,10 +58,10 @@ func (sn *rootspanName) processTraces(_ context.Context, td ptrace.Traces) (ptra
 
 				if parentspanID == "" {
 					rootSpanName = spanName
-					fmt.Printf("Set rootSpanName = " + rootSpanName)
+					//fmt.Printf("Set rootSpanName = " + rootSpanName)
 				}
 				
-				fmt.Printf("Root Span for span ID " + spanID + "with name" + spanName + "is" + rootSpanName)
+				fmt.Printf("Root Span for span ID " + spanID + " with name " + spanName + " is " + rootSpanName)
 			}
 
 		}
